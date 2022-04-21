@@ -1,9 +1,11 @@
 @import "normalize.css";
 
+/*Version Desktop*/
 * {
-  margin: 5px;
-  padding: 2px;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
+  color: black;
 }
 html {
   display: block;
@@ -12,39 +14,46 @@ body {
   margin: 0px;
   font-family: "Raleway", sans-serif;
 }
-/*Header*/
 
-nav {
+/*Header*/
+header {
+  display: flex;
+}
+.header__logo img {
+  height: 55px;
+}
+
+header {
+  justify-content: flex-start;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-nav img {
-  height: 55px;
+nav {
+  padding-top: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
-nav ul {
-  display: flex;
-  list-style: none;
-}
-nav li {
-  margin: 0px 10px 0px 20px;
-}
-.links {
-  border-style: solid;
-  border-top: 4px;
-  border-bottom: none;
-  border-left: none;
-  border-right: none;
+.nav__links {
+  padding-top: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
   text-decoration: none;
+  border-top: 2px solid transparent;
 }
 
-.links:hover {
-  border-top: solid 3px;
-  border-color: #0065fc;
-  padding-top: 43px;
+.nav__links:hover {
+  padding-top: 57px;
+  border-top: 3px solid #0065fc;
 }
 
+/*fin du header*/
+/*main*/
+/*section*/
+h1 {
+  font-size: 20px;
+}
+/*fin section*/
 .form {
   display: flex;
   width: 130px;
@@ -89,17 +98,99 @@ nav li {
   width: 130px;
   height: 38px;
 }
-
-.fa-solid fa-location-dot {
+/*barre de recherche*/
+.fa-location-dot {
   background-color: #f2f2f2;
+}
+/*Filtres de recherche*/
+.fa-solid {
+  display: flex;
+  align-items: center;
+}
+.category {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+#filter_title {
+  font-size: 20px;
+  padding-top: 6px;
+}
+
+#filter_list {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-left: 25px;
+  margin-top: -8px;
+}
+
+.filterEffect {
+  display: flex;
+  flex-direction: row;
+}
+
+#filter_cell_money {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  border: 3px solid #f2f2f2;
+  border-left: none;
+  border-radius: 50px 50px 50px 50px;
+  width: 205px;
+  margin-right: 20px;
+  padding-top: 12px;
+  padding-left: 65px;
+  position: relative;
+}
+#filter_cell_child {
+  display: flex;
+  font-weight: bold;
+  font-size: 20px;
+  border-left: none;
+  border: 3px solid #f2f2f2;
+  border-left: none;
+  border-radius: 50px 50px 50px 50px;
+  width: 165px;
+  margin-right: 20px;
+  padding-top: 12px;
+  padding-left: 65px;
+  position: relative;
+}
+
+#filter_cell_heart {
+  font-weight: bold;
+  font-size: 20px;
+  border: 3px solid #f2f2f2;
+  border-left: none;
+  border-radius: 50px 50px 50px 50px;
+  width: 205px;
+  margin-right: 20px;
+  padding-top: 12px;
+  padding-left: 65px;
+  position: relative;
+}
+#filter_cell_dog {
+  font-weight: bold;
+  font-size: 20px;
+  border: 3px solid #f2f2f2;
+  border-left: none;
+  border-radius: 50px 50px 50px 50px;
+  width: 265px;
+  margin-right: 20px;
+  padding-top: 12px;
+  padding-left: 65px;
+  position: relative;
 }
 /* tous types d'écran de 992px min version tablette*/
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
 }
 
 /* tous types d'écran de 768px max telephone*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   body {
     margin: 0px;
     font-family: "Raleway", sans-serif;
@@ -117,7 +208,8 @@ nav li {
 
   nav img {
     display: flex;
-    width: 275px;
+    width: 150px;
+    height: 120px;
     align-self: center;
   }
   #logo {
@@ -133,8 +225,7 @@ nav li {
     list-style: none;
   }
 
-  nav li:hover {
-    border-width: 100%;
+  li:hover {
     border-bottom: #0065fc 3px solid;
   }
 
@@ -146,9 +237,9 @@ nav li {
     justify-content: center;
   }
 
-  .links {
+  a .nav__links {
     border-style: solid;
-    border-top: 4px;
+    border-top: none;
     border-bottom: none;
     border-left: none;
     border-right: none;
@@ -156,10 +247,9 @@ nav li {
     font-size: 20px;
     padding-bottom: 8px;
     padding-top: 32px;
-    border-bottom: 3px solid transparent;
-    border-top: unset;
   }
 
-  .links:hover {
+  a .nav__links:hover {
+    border-bottom: #0065fc 3px solid;
   }
 }
