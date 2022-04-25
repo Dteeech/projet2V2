@@ -5,14 +5,13 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  
 }
 html {
   display: block;
 }
 body {
-  margin: 0px;
   font-family: "Raleway", sans-serif;
+  display: block;
 }
 .page {
   max-width: 1440px;
@@ -55,16 +54,21 @@ nav {
 
 /*main*/
 
-/*section*/
+/*section main__recherche*/
+.main__recherche {
+  display: block;
+  margin: 7px;
+  padding: 30px;
+}
+
 h1 {
   font-size: 20px;
 }
 /*fin section*/
 .form {
   display: flex;
-  width: 130px;
-  height: 38px;
   flex-direction: row;
+  padding-top: 20px;
 }
 
 .form__locationdot {
@@ -99,12 +103,12 @@ h1 {
   font-weight: bold;
 }
 
-
 /*barre de recherche*/
 .fa-location-dot {
   background-color: #f2f2f2;
 }
 /*Filtres de recherche*/
+
 .fa-solid {
   display: flex;
   align-items: center;
@@ -115,30 +119,102 @@ h1 {
   flex-wrap: wrap;
   margin-top: 30px;
 }
-#filter_title {
+
+#filter__title {
   font-size: 20px;
   padding-top: 6px;
+
 }
 
-#filter_list {
+#filter__list {
   display: flex;
-  justify-content: flex-start;
   flex-direction: row;
   margin-left: 25px;
   margin-top: -8px;
+  justify-content: flex-start;
+}
+/* logos*/
+
+.fa-money-bill {
+  background-color: #DEEBFF;
+  border-radius: 50px 50px 50px 50px;
+  color: #0065FC;
+  font-size: 20px;
+  padding: 16px;
+  padding-left: 15.5px;
+  padding-right: 15.5px;
+  margin-top: 21px;
+  margin-bottom: 21px;
+  margin-right: -50px;
+  position: relative;
+  
 }
 
-.filterEffect {
+
+
+.fa-child-reaching {
+  background-color: #DEEBFF;
+  border-radius: 50px 50px 50px 50px;
+  color: #0065FC;
+  font-size: 20px;
+  padding: 15px;
+  padding-left: 19px;
+  padding-right: 19px;
+  margin-top: 21px;
+  margin-bottom: 21px;
+  margin-right: -50px;
+  position: relative;
+ 
+
+}
+
+.fa-heart {
+  background-color: #DEEBFF;
+  font-size: 20px;
+  border-radius: 50px 50px 50px 50px;
+  padding: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 21px;
+  margin-bottom: 21px;
+  margin-right: -50px;
+  position: relative;
+  
+  color: #0065FC;
+}
+
+
+
+.fa-dog {
+  background-color: #DEEBFF;
+  color: #0065FC;
+  font-size: 20px;
+  border-radius: 50px 50px 50px 50px;
+  padding: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 12px;
+  margin-top: 21px;
+  margin-bottom: 21px;
+  margin-right: -50px;
+  position: relative;
+  
+}
+
+  
+/* fin des logo*/
+
+.filter__effect {
   display: flex;
   flex-direction: row;
 }
 
-#filter_cell_money {
-  display: flex;
-  align-items: center;
+/* P logo*/
+
+.filter_cell_money {
   font-size: 20px;
   font-weight: bold;
-  border: 3px solid #f2f2f2;
+  border: 3px solid #F2F2F2;
   border-left: none;
   border-radius: 50px 50px 50px 50px;
   width: 205px;
@@ -146,13 +222,13 @@ h1 {
   padding-top: 12px;
   padding-left: 65px;
   position: relative;
+  z-index: 0;
 }
-#filter_cell_child {
-  display: flex;
+
+.filter_cell_child{
   font-weight: bold;
-  font-size: 20px;
   border-left: none;
-  border: 3px solid #f2f2f2;
+  border: 3px solid #F2F2F2;
   border-left: none;
   border-radius: 50px 50px 50px 50px;
   width: 165px;
@@ -160,12 +236,12 @@ h1 {
   padding-top: 12px;
   padding-left: 65px;
   position: relative;
-}
-
-#filter_cell_heart {
-  font-weight: bold;
+  z-index: 0;
   font-size: 20px;
-  border: 3px solid #f2f2f2;
+}
+.filter_cell_heart{
+  font-weight: bold;
+  border: 3px solid #F2F2F2;
   border-left: none;
   border-radius: 50px 50px 50px 50px;
   width: 205px;
@@ -173,11 +249,15 @@ h1 {
   padding-top: 12px;
   padding-left: 65px;
   position: relative;
+  z-index: 0;
+  font-size: 20px;
+  
 }
-#filter_cell_dog {
+
+.filter_cell_dog{
   font-weight: bold;
   font-size: 20px;
-  border: 3px solid #f2f2f2;
+  border: 3px solid #F2F2F2;
   border-left: none;
   border-radius: 50px 50px 50px 50px;
   width: 265px;
@@ -185,14 +265,21 @@ h1 {
   padding-top: 12px;
   padding-left: 65px;
   position: relative;
+  z-index: 0;
 }
+
+
+
+
+
 /*fin filtres de recherche*/
 
-/*footer*/
-footer {
+/*section Partie 1*/
 
+/*footer*/
+
+footer {
   display: flex;
-  position: absolute;
   bottom: 0;
   flex-direction: row;
   width: 100%;
@@ -200,14 +287,13 @@ footer {
   padding-top: 30px;
   padding-bottom: 40px;
   padding-left: 40px;
-
+  position: absolute;
 }
 
-footer .ul{
+footer .ul {
   display: block;
-  
 }
-footer a{
+footer a {
   display: block;
   flex-direction: column;
 }
@@ -219,8 +305,6 @@ footer a{
   flex-wrap: wrap;
   flex-direction: column;
 }
-
-
 
 /* tous types d'écran de 992px min version tablette*/
 
