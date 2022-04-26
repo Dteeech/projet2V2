@@ -33,7 +33,7 @@ header {
   align-items: center;
 }
 nav {
-  padding-top: 60px;
+  padding-top: 45px;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -46,7 +46,7 @@ nav {
 }
 
 .nav__links:hover {
-  padding-top: 57px;
+  padding-top: 40px;
   border-top: 3px solid #0065fc;
 }
 
