@@ -140,7 +140,7 @@ h1 {
   color: #0065FC;
   font-size: 20px;
   padding: 16px;
-  padding-left: 15.5px;
+  padding-left: 14px;
   padding-right: 15.5px;
   margin-top: 21px;
   margin-bottom: 21px;
@@ -157,7 +157,7 @@ h1 {
   color: #0065FC;
   font-size: 20px;
   padding: 15px;
-  padding-left: 19px;
+  padding-left: 17px;
   padding-right: 19px;
   margin-top: 21px;
   margin-bottom: 21px;
@@ -172,7 +172,7 @@ h1 {
   font-size: 20px;
   border-radius: 50px 50px 50px 50px;
   padding: 15px;
-  padding-left: 16px;
+  padding-left: 15px;
   padding-right: 16px;
   margin-top: 21px;
   margin-bottom: 21px;
@@ -190,7 +190,7 @@ h1 {
   font-size: 20px;
   border-radius: 50px 50px 50px 50px;
   padding: 15px;
-  padding-left: 15px;
+  padding-left: 14px;
   padding-right: 15px;
   margin-right: 12px;
   margin-top: 21px;
@@ -201,14 +201,16 @@ h1 {
 }
 
   
-/* fin des logo*/
+/* fin des icones*/
+/*zone texte icones*/
 
 .filter__effect {
   display: flex;
   flex-direction: row;
 }
 
-/*  logos */
+
+
 
 .filter__effect--money {
   font-size: 20px;
@@ -216,8 +218,8 @@ h1 {
   border: 3px solid #F2F2F2;
   border-left: none;
   border-radius: 50px 50px 50px 50px;
-  border-
-  width: 205px;
+  height: 56px;
+  width: 200px;
   margin-right: 20px;
   padding-top: 12px;
   padding-left: 65px;
@@ -232,6 +234,7 @@ h1 {
   border: 3px solid #F2F2F2;
   border-left: none;
   border-radius: 50px 50px 50px 50px;
+  height: 56px;
   width: 165px;
   margin-right: 20px;
   padding-top: 12px;
@@ -245,6 +248,7 @@ h1 {
   border: 3px solid #F2F2F2;
   border-left: none;
   border-radius: 50px 50px 50px 50px;
+  height: 56px;
   width: 205px;
   margin-right: 20px;
   padding-top: 12px;
@@ -261,6 +265,7 @@ h1 {
   border: 3px solid #F2F2F2;
   border-left: none;
   border-radius: 50px 50px 50px 50px;
+  height: 56px;
   width: 265px;
   margin-right: 20px;
   padding-top: 12px;
@@ -268,6 +273,9 @@ h1 {
   position: relative;
   align-self: center;
 }
+
+/*fin zone filtres de recherche*/
+/*infos*/
 
 .infos {
   display: flex;
@@ -295,23 +303,55 @@ h1 {
 
 
 
-/*fin filtres de recherche*/
+
 
 /*section Partie 1 hebergement Marseille */
-.hebergement {
-  border: black 1px solid;
+#hebergements {
+  background-color: #F2F2F2;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 0 20px 40px 50px;
+  display: flex;
+  
 }
 
-.hebergement__cover {
+.hebergement__cards a{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-decoration: none;
+
+}
+.cards__img{
+  width: 88%;
+  background-color: white;
+  border-radius: 20px;
+  margin: 15px;
+  box-shadow: 0 0 15px #e0e0e0;
+  transition: transform 0.3s;
+
+}
+h2 {
+  margin: 15px;
+  padding-top: 15px;
+  padding-left: 5px;
+  
+  
+}
+h3, h4, h5, h6, h7, h8{
+  text-decoration: none;
 
 }
 
 .hebergement__cover__img {
-  height: 150px;
-  width: 150px;
-  object-fit: cover;
-  border-radius: ;
+  width: 300px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 15px;
+  box-shadow: 0 0 15px #e0e0e0;
+  border
 }
+
 
 /*footer*/
 
