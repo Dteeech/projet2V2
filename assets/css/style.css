@@ -110,11 +110,10 @@ h1 {
 /*Filtres de recherche*/
 
 .fa-solid {
-  display: flex;
   align-items: center;
 }
 .category {
-  display: flex;
+  
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 30px;
@@ -270,13 +269,49 @@ h1 {
   align-self: center;
 }
 
+.infos {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  
+
+}
+
+.fa-info {
+
+  background-color: white;
+  color: #0065FC;
+  font-size: 10px;
+  border-radius: 50px 50px 50px 50px;
+  padding: 15px;
+  
+}  
+
+.infos__text{
+  align-self:flex-end;
+
+}
 
 
 
 
 /*fin filtres de recherche*/
 
-/*section Partie 1*/
+/*section Partie 1 hebergement Marseille */
+.hebergement {
+  border: black 1px solid;
+}
+
+.hebergement__cover {
+
+}
+
+.hebergement__cover__img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: ;
+}
 
 /*footer*/
 
@@ -289,7 +324,7 @@ footer {
   padding-top: 30px;
   padding-bottom: 40px;
   padding-left: 40px;
-  position: absolute;
+  
 }
 
 footer .ul {
@@ -308,6 +343,7 @@ footer a {
   flex-direction: column;
 }
 
+
 /* tous types d'écran de 992px min version tablette*/
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -325,8 +361,8 @@ footer a {
   }
   nav {
     display: flex;
-    flex-direction: column;
-    place-self: unset;
+    flex-direction: row
+    
     width: 100%;
   }
 
