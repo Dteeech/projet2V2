@@ -2,8 +2,7 @@
 
 /*Version Desktop*/
 * {
-  margin: 0px;
-  padding: 0px;
+  
   box-sizing: border-box;
 }
 html {
@@ -13,15 +12,16 @@ body {
   font-family: "Raleway", sans-serif;
   display: block;
 }
-.page {
-  max-width: 1440px;
+#page {
+  max-width: 1600px;
   margin: auto;
 }
 
 /*Header*/
 header {
-  display: flex;
+  display: block;
 }
+
 .header__logo img {
   height: 55px;
 }
@@ -122,6 +122,10 @@ h1 {
 #filter__title {
   font-size: 20px;
   padding-top: 6px;
+  padding-right: 0px;
+  margin-right: 0px;
+  width: 100px;
+  font-weight: bold;
 
 }
 
@@ -210,8 +214,6 @@ h1 {
 }
 
 
-
-
 .filter__effect--money {
   font-size: 20px;
   font-weight: bold;
@@ -243,6 +245,7 @@ h1 {
   font-size: 20px;
   align-self: center;
 }
+
 .filter__effect--heart{
   font-weight: bold;
   border: 3px solid #F2F2F2;
@@ -306,53 +309,106 @@ h1 {
 
 
 /*section Partie 1 hebergement Marseille */
-#hebergements {
-  background-color: #F2F2F2;
-  padding: 20px;
-  border-radius: 15px;
-  margin: 0 20px 40px 50px;
-  display: flex;
-  
-}
-
-.hebergement__cards a{
+#main__hebergements{
   display: flex;
   flex-direction: row;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 50px;
+
+}
+#main__hebergements__block{
+  background-color: #F2F2F2;
+  border-radius: 20px;
+  width: 40%;
+  margin-right: 30px;
+}
+
+
+
+#main__hebergements__block__cards {
+
+  display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
-  text-decoration: none;
 
 }
-.cards__img{
-  width: 88%;
+
+.main__hebergements__block__cards__card{
+  display: flex;
   background-color: white;
+  width: 30%;
+  height: 20%;
+  margin: 10px 0px;
+  padding: 5px 5px;
   border-radius: 20px;
-  margin: 15px;
-  box-shadow: 0 0 15px #e0e0e0;
-  transition: transform 0.3s;
+  box-shadow: 0px 3px 15px rgb(0 0 0 / 10%);
+  transition: 1s;
+  flex-direction: column;
+}
+
+
+.main__hebergements__block__cards__card a{
+  text-decoration: none;
+}
+
+.main__hebergements__block__cards__card img{
+  height: 130px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
 
 }
-h2 {
-  margin: 15px;
-  padding-top: 15px;
-  padding-left: 5px;
+
+.main__hebergements__block__cards__card__description{
+  padding-bottom: 5px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.main__hebergements__block__cards__card__description h3{
+  margin: 10px 0 5px 0;
+}
+
+.main__hébergements__block__cards_card__description p {
+  margin: 0 0 10px 0;
+}
+
+.stars{
+  color: #0065fc;
+  font-size: 14px;
+}
+
+
+ h2 {
+  display: flex;
+  margin: 2px 2px 2px 2px;
+  padding-right:400px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-top: 10px;
+
+ 
   
   
 }
-h3, h4, h5, h6, h7, h8{
+
+h3 {
   text-decoration: none;
+  font-weight: bold;
+  font-size: large;
 
 }
 
-.hebergement__cover__img {
-  width: 300px;
-  background-color: white;
-  border-radius: 20px;
-  margin: 15px;
-  box-shadow: 0 0 15px #e0e0e0;
-  border
+.titre7, .titre8{
+  text-decoration: none;
 }
 
 
+
+.fa-duotone{
+  color: #e0e0e0;
+}
 /*footer*/
 
 footer {
@@ -369,10 +425,12 @@ footer {
 
 footer .ul {
   display: block;
+
 }
 footer a {
   display: block;
   flex-direction: column;
+  text-decoration:initial;
 }
 
 .footer__column {
@@ -383,6 +441,10 @@ footer a {
   flex-direction: column;
 }
 
+.plus{
+padding-top: 50px;
+flex-wrap:wrap;
+}
 
 /* tous types d'écran de 992px min version tablette*/
 
