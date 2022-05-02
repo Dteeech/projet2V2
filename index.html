@@ -5,11 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap"
-      rel="stylesheet"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     />
     <link
       rel="stylesheet"
@@ -34,7 +32,7 @@
      
       <header>
      
-        <div class="header__logo">
+        <div id="header__logo">
      
           <img id="logo" src="/assets/images/logo/Booki.png" alt="logo_booki" />
      
@@ -88,9 +86,11 @@
       
         <div class="category">
       
-          <div id="filter__title">Filtres</div>
+          
       
           <div id="filter__list">
+            
+            <div id="filter__title">Filtres</div>
       
             <div class="filter__effect">
       
@@ -357,9 +357,16 @@
                       
               
             </div>
-            <p class="plus"><a href="#">Afficher plus</a> </p>
-          </div> 
             
+          </div> 
+          
+            <p class="plus">
+            
+              <a href="#">Afficher plus</a>
+            
+            </p>
+          
+          
           
         </article>
         
@@ -498,37 +505,63 @@
             </a>
 
           </div>
-          <div class="main__activites__double">
+          <div class="main__activites__block__double">
+            <a href="#">
+
+              <div class="main__activites__block__double_card">
+              
+                
+                <img src="assets/images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+
+                <h3>Fort de Pomègues</h3>
+
+              </div>
+              <div class="main__activites__block__double_card">
+                
+                <img src="assets/images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="îles du frioul">
+                
+                <h3> Îles du Frioul</h3> 
+              </div>
+
+           
+            </a>
+          
+          </div>
+          
+          <div class="main__activites__block__large_card">
             
-            <div class="main__activites__double__card">
+            <a href="#">
               
-              <img src="assets/images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
-
-            </div>
-            <div class="main__activites__double__card">
+              <img src="assets/images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc national des Calanques">
               
-              <img src="assets/images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="îles du frioul">
+              <h3>Parc national des Calanques</h3>
 
-            </div>
+            </a>
 
           </div>
-          <div class="main__activites__block__largepic">
+          <div class="main__activites__block__double">
+           
+            <a href="#">
+              
+              <div class="main__activites__block__double_card">
+              
+                <img src="assets/images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre dame de la garde">
+              
+                  <h3>Notre-Dame-De-La-Garde</h3>
             
-            <img src="assets/images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc national des Calanques">
-
-
-          </div>
-          <div class="main__activites__double">
-            <div class="main__activites__double__card">
+              </div>
+            
+              <div class="main__activites__block__double_card">
+                
+                <img src="assets/images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamps">
               
-              <img src="assets/images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre dame de la garde">
+                <h3>Parc Longchamps</h3>
 
-            </div>
-            <div class="main__activites__double__card">
+              </div>
+            
+            </a>  
               
-              <img src="assets/images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamps">
-
-            </div>
+              </div>
 
           </div>
 
@@ -549,14 +582,17 @@
 
       <footer>
       
-        <div class="footer__column"><h4>A propos</h4>
+        <div class="footer__column">
+          
           <ul>
+            
+            <h4>A propos</h4>
 
-            <il><a href="#">Fonctionnement du site</a></il>
+            <li><a href="#">Fonctionnement du site</a></li>
             
-            <il><a href="#">Conditions générales de vente</a></il>
+            <li><a href="#">Conditions générales de vente</a></li>
             
-            <il><a href="#">Données et confidentialité</a></il>
+            <li><a href="#">Données et confidentialité</a></li>
           
           </ul>
       
@@ -564,13 +600,14 @@
         
         <div class="footer__column">
         
-          <h5>Nos hébergements</h5>
+         
         
           <ul>
+            <h4>Nos hébergements</h4>
+            
+            <li><a href="#">Charte qualité</a></li>
         
-            <il><a href="#">Charte qualité</a></il>
-        
-            <il><a href="#">Soumettre votre hôtel</a></il>
+            <li><a href="#">Soumettre votre hôtel</a></li>
         
           </ul>
 
@@ -578,13 +615,15 @@
 
         <div class="footer__column">
         
-          <h6>Assistance</h6>
+          
         
           <ul>
+            
+            <h4>Assistance</h4>
         
-            <il><a href="#">Centre d'aide</a></il>
+            <li><a href="#">Centre d'aide</a></li>
         
-            <il><a href="#">Nous contacter</a></il>
+            <li><a href="#">Nous contacter</a></li>
         
           </ul>
 

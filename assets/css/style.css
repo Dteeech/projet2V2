@@ -4,12 +4,13 @@
 * {
   
   box-sizing: border-box;
+
 }
 html {
   display: block;
 }
 body {
-  font-family: "Raleway", sans-serif;
+  font:bold 80% "Raleway", serif;
   display: block;
 }
 #page {
@@ -20,10 +21,14 @@ body {
 /*Header*/
 header {
   display: block;
+  margin: auto;
+}
+#header__logo{
+  margin-left: 30px;
 }
 
-.header__logo img {
-  height: 55px;
+#header__logo img {
+  height: 80px;
 }
 
 header {
@@ -55,10 +60,15 @@ nav {
 /*main*/
 
 /*section main__recherche*/
+main{
+  margin: 20px;
+  
+}
 .main__recherche {
   display: block;
-  margin: 7px;
+  margin: 5px;
   padding: 30px;
+  padding-left: 4px;
 }
 
 h1 {
@@ -112,6 +122,7 @@ h1 {
 .fa-solid {
   align-items: center;
 }
+
 .category {
   
   flex-direction: row;
@@ -121,9 +132,8 @@ h1 {
 
 #filter__title {
   font-size: 20px;
-  padding-top: 6px;
-  padding-right: 0px;
-  margin-right: 0px;
+  align-self: center;
+  justify-content: flex-start;
   width: 100px;
   font-weight: bold;
 
@@ -132,8 +142,8 @@ h1 {
 #filter__list {
   display: flex;
   flex-direction: row;
-  margin-left: 25px;
-  margin-top: -8px;
+  margin-left: 10px;
+  margin-top: 0px;
   justify-content: flex-start;
 }
 /* logos*/
@@ -315,10 +325,15 @@ h1 {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 50px;
+  
 
 }
 
- h2 {
+#main__hebergements p, h3 {
+  color: black;
+}
+
+h2 {
   margin-left: 25px;
   
 }
@@ -326,9 +341,10 @@ h1 {
 
 #main__hebergements__block{
   background-color: #F2F2F2;
-    border-radius: 20px;
-    width: 70%;
-    margin-right: 30px;
+  border-radius: 20px;
+  width: 70%;
+  height: 100%;
+  margin-right: 30px;
 }
 
 
@@ -375,16 +391,18 @@ h1 {
 }
 
 .main__hebergements__block__cards__card__description h3{
-  margin: 10%;
+
+  font-weight: bold;
 }
 
 .main__hebergements__block__cards_card__description p {
-  margin: 0 0 10px 0;
+  margin: 10px 0 10px 0;
 }
 
-.stars{
+.main__hebergements__block__cards_card__description .stars{
   color: #0065fc;
   font-size: 14px;
+ 
 }
 
 
@@ -394,10 +412,10 @@ h1 {
 
 
 h3 {
+  display: block;
   text-decoration: none;
+  font-size: large ;
   font-weight: bold;
-  font-size: large;
-
 }
 
 .titre7, .titre8{
@@ -466,14 +484,85 @@ border-radius: 20px;
   padding-left: 15px;
   margin: 3px;
 }
-.main__hebergement__aside__card__description h3 {
-  margin: 1px 1px 1px 1px;
+.main__hebergement__aside__card__description h3 , p {
+  margin: 0px 0px 30px 0px;
   padding: 1px;
 }
+.main__hebergement__aside__card__description .stars {
+margin-top: 10px;
+}
+
+
+
 
 /*Activité Marseille*/
 
-#main__activite
+#main__activites {
+  margin: 50px;
+  
+}
+ 
+#main__activites__block {
+  
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+
+}
+#main__activites__block a {
+  text-decoration: none;
+}
+#main__activites__block{
+  text-decoration: none;
+
+}
+
+.main__activites__block__large_card{
+  border-radius: 20px;
+  height: 420px;
+  width: 20%;
+  transition: 1s;
+  box-shadow: 0px 0px 13px #e2e2e2;
+}
+
+.main__activites__block__large_card img {
+height: 372px;
+object-fit: cover;
+border-radius: 20px 20px 0 0px;
+width: 100%;
+}
+
+
+.main__activites__block__double {
+  display: flex;
+  justify-content: space-between;
+  width: 24%;
+  flex-direction: column;
+}
+
+.main__activites__block__double_card{
+  box-shadow: 0px 0px 13px #e2e2e2;
+  height: 187px;
+  width: 90%;
+  transition: 1s;
+  border-radius: 20px;
+}
+.main__activites__block__double_card img {
+  object-fit: cover;
+  width: 100%;
+  height: 140px;
+  border-radius: 20px 20px 0 0;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -497,27 +586,34 @@ footer {
   
 }
 
-footer .ul {
+footer ul {
   display: block;
+  list-style: none;
+  
+}
+footer li {
+  margin-bottom: 10px;
+  margin-left: 0px;
 
 }
 footer a {
   display: block;
   flex-direction: column;
-  text-decoration:initial;
+  text-decoration: none;
+  
 }
 
 .footer__column {
   display: block;
-  padding: auto;
   margin: auto;
-  flex-wrap: wrap;
   flex-direction: column;
 }
 
-.plus{
+.plus {
   margin-left: 25px;
-  font-weight: bold;
+  font-size: large;
+  text-decoration: none;
+  
 }
 
 /* tous types d'écran de 992px min version tablette*/
@@ -533,12 +629,13 @@ footer a {
   }
   header {
     display: flex;
+    
     flex-direction: column;
   }
+  
   nav {
     display: flex;
     flex-direction: row
-    
     width: 100%;
   }
 
@@ -548,6 +645,9 @@ footer a {
     height: 120px;
     align-self: center;
   }
+
+
+
   #logo {
     align-items: center;
     padding: 0px;
