@@ -317,11 +317,18 @@ h1 {
   margin-bottom: 50px;
 
 }
+
+ h2 {
+  margin-left: 25px;
+  
+}
+
+
 #main__hebergements__block{
   background-color: #F2F2F2;
-  border-radius: 20px;
-  width: 40%;
-  margin-right: 30px;
+    border-radius: 20px;
+    width: 70%;
+    margin-right: 30px;
 }
 
 
@@ -364,13 +371,14 @@ h1 {
   padding-bottom: 5px;
   padding-left: 10px;
   font-size: 14px;
+  
 }
 
 .main__hebergements__block__cards__card__description h3{
-  margin: 10px 0 5px 0;
+  margin: 10%;
 }
 
-.main__hébergements__block__cards_card__description p {
+.main__hebergements__block__cards_card__description p {
   margin: 0 0 10px 0;
 }
 
@@ -380,18 +388,10 @@ h1 {
 }
 
 
- h2 {
-  display: flex;
-  margin: 2px 2px 2px 2px;
-  padding-right:400px;
-  padding-left: 15px;
-  padding-bottom: 15px;
-  padding-top: 10px;
 
  
   
-  
-}
+
 
 h3 {
   text-decoration: none;
@@ -406,9 +406,83 @@ h3 {
 
 
 
-.fa-duotone{
+.fa-duotone {
   color: #e0e0e0;
 }
+
+/*les plus populaires*/
+
+#main__hebergement__aside{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 30%;
+background-color: #F2F2F2;
+border-radius: 20px;
+}
+
+#main__hebergement__aside a{
+  text-decoration: none;
+}
+.main__hebergement__aside__title{
+  display: flex;
+  align-items: center;
+  width: 87%;
+  justify-content: space-between;
+
+}
+
+#title__star{
+  
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  justify-content: right;
+
+}
+
+.main__hebergement__aside__card{
+  display: flex;
+  width: 90%;
+  height: 170px;
+  background-color: white;
+  margin: 10px 0px;
+  padding: 5px 5px;
+  border-radius: 20px;
+  transition: 1s;
+
+}
+
+.main__hebergement__aside__card a {
+  display: flex;
+}
+.main__hebergement__aside__card img{
+  width: 30%;
+  object-fit: cover;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.main__hebergement__aside__card__description{
+  font-size: 14px;
+  padding-left: 15px;
+  margin: 3px;
+}
+.main__hebergement__aside__card__description h3 {
+  margin: 1px 1px 1px 1px;
+  padding: 1px;
+}
+
+/*Activité Marseille*/
+
+#main__activite
+
+
+
+
+
+
+
+
+
 /*footer*/
 
 footer {
@@ -442,8 +516,8 @@ footer a {
 }
 
 .plus{
-padding-top: 50px;
-flex-wrap:wrap;
+  margin-left: 25px;
+  font-weight: bold;
 }
 
 /* tous types d'écran de 992px min version tablette*/
