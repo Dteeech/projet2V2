@@ -59,26 +59,29 @@
      
         <p>En plein centre ville ou en pleine nature</p>
      
-        <form class="form">
+        <form method="post" action="traitement.php">
      
-          <span class="form__locationdot"
-     
-          ><i class="fa-solid fa-location-dot"></i></span>
+          <span class="form__locationdot"><i class="fa-solid fa-location-dot"></i></span>
           <!--barre de recherche-->
-            <input
-              class="form__barreDeRecherche"
-              type="search"
-              placeholder="Marseille, France"
-              size="1"
-            />
+          <input
+            class="form__barreDeRecherche"
+            type="search"
+            placeholder="Marseille, France"
+            size="1"
+          />
+          
+          <button type="submit" class="mobile__boutton">
             
-            <button class="form__boutton">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          
+          </button>
+          <input type="submit" value="Rechercher" class="form__boutton">
+          
+  
             
-              <span class="form__texteDuBoutton"> Rechercher</span>
-            
-            </button>
+          
           <!-- bouton recherche-->
-          </form>
+        </form>
       
         </section>
         <!--filtres de recherche-->
@@ -87,10 +90,11 @@
         <div class="category">
       
           
-      
+          <div id="filter__title">Filtres</div>
+          
           <div id="filter__list">
             
-            <div id="filter__title">Filtres</div>
+            
       
             <div class="filter__effect">
       
