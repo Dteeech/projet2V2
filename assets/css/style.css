@@ -42,12 +42,14 @@ nav {
   padding-left: 40px;
   padding-right: 40px;
 }
+
 .nav__links {
   padding-top: 60px;
   padding-left: 40px;
   padding-right: 40px;
   text-decoration: none;
   border-top: 2px solid transparent;
+  color: black;
 }
 
 .nav__links:hover {
@@ -119,9 +121,8 @@ h1 {
 }
 /*Filtres de recherche*/
 
-.fa-solid {
-  align-items: center;
-}
+
+
 
 .category {
   
@@ -159,7 +160,7 @@ h1 {
   margin-top: 21px;
   margin-bottom: 21px;
   margin-right: -50px;
-  position: relative;
+  position: absolute; bottom: 188px;
   
 }
 
@@ -176,8 +177,7 @@ h1 {
   margin-top: 21px;
   margin-bottom: 21px;
   margin-right: -50px;
-  position: relative;
- 
+  position: absolute; bottom: 189px; 
 
 }
 
@@ -191,8 +191,7 @@ h1 {
   margin-top: 21px;
   margin-bottom: 21px;
   margin-right: -50px;
-  position: relative;
-  
+  position: absolute; bottom: 189px;  
   color: #0065FC;
 }
 
@@ -210,8 +209,7 @@ h1 {
   margin-top: 21px;
   margin-bottom: 21px;
   margin-right: -50px;
-  position: relative;
-  
+  position: absolute; bottom: 190px;  
 }
 
   
@@ -221,6 +219,7 @@ h1 {
 .filter__effect {
   display: flex;
   flex-direction: row;
+  justify-self: auto;
 }
 
 
@@ -295,6 +294,7 @@ h1 {
   flex-direction: row;
   margin-bottom: 20px;
   
+  
 
 }
 
@@ -309,7 +309,9 @@ h1 {
 }  
 
 .infos__text{
-  align-self:flex-end;
+  display: flex;
+  
+  
 
 }
 
@@ -395,34 +397,27 @@ h2 {
   font-weight: bold;
 }
 
-.main__hebergements__block__cards_card__description p {
+.main__hebergements__block__cards__card__description p {
   margin: 10px 0 10px 0;
 }
 
-.main__hebergements__block__cards_card__description .stars{
+.main__hebergements__block__cards__card__description .stars{
   color: #0065fc;
   font-size: 14px;
  
 }
 
 
-
- 
-  
-
-
 h3 {
   display: block;
   text-decoration: none;
   font-size: large ;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .titre7, .titre8{
   text-decoration: none;
 }
-
-
 
 .fa-duotone {
   color: #e0e0e0;
@@ -490,6 +485,7 @@ border-radius: 20px;
 }
 .main__hebergement__aside__card__description .stars {
 margin-top: 10px;
+color: #0065fc;
 }
 
 
@@ -510,6 +506,9 @@ margin-top: 10px;
   
 
 }
+
+
+
 #main__activites__block a {
   text-decoration: none;
 }
@@ -533,6 +532,15 @@ border-radius: 20px 20px 0 0px;
 width: 100%;
 }
 
+.main__activites__block__large_card__description--port {
+  margin-left: 85px;
+}
+.main__activites__block__large_card__description--calanques {
+margin-left: 30px;
+}
+
+
+
 
 .main__activites__block__double {
   display: flex;
@@ -547,7 +555,9 @@ width: 100%;
   width: 90%;
   transition: 1s;
   border-radius: 20px;
+  margin-bottom: 50px;
 }
+
 .main__activites__block__double_card img {
   object-fit: cover;
   width: 100%;
@@ -555,6 +565,18 @@ width: 100%;
   border-radius: 20px 20px 0 0;
 }
 
+.main__activites__block__double_card__description--fort{
+  margin-left: 69px;
+}
+.main__activites__block__double_card__description--iles{
+  margin-left: 90px;
+}
+.main__activites__block__double_card__description--dame{
+  margin-left: 40px;
+}
+.main__activites__block__double_card__description--parc{
+  margin-left: 80px;
+}
 
 
 
@@ -589,6 +611,7 @@ footer {
 footer ul {
   display: block;
   list-style: none;
+  color: black;
   
 }
 footer li {
@@ -597,10 +620,20 @@ footer li {
 
 }
 footer a {
-  display: block;
   flex-direction: column;
   text-decoration: none;
-  
+  color:black;
+  font-weight: 100;
+  display: block;
+}
+
+footer a:hover {
+  flex-direction: column;
+  text-decoration: none;
+  color:black;
+  text-decoration: underline;
+  font-weight: 100;
+  display: block;
 }
 
 .footer__column {
