@@ -41,9 +41,9 @@
      
         <nav>
      
-          <a class="nav__links" href="#">Hébergements</a>
+          <a class="header__nav__links" href="#">Hébergements</a>
      
-          <a class="nav__links" href="#">Activités</a>
+          <a class="header__nav__links" href="#">Activités</a>
      
         </nav>
      
@@ -52,30 +52,34 @@
      
       <main>
      
-        <section class="main__recherche">
+        <section id="main__recherche">
         <!--Section recherche-->
      
-        <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+        <div id="main__recherche__intro">
+          
+          <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
      
-        <p>En plein centre ville ou en pleine nature</p>
-     
+          
+          <p>En plein centre ville ou en pleine nature</p>
+        
+        </div>
         <form method="post" action="traitement.php">
      
-          <span class="form__locationdot"><i class="fa-solid fa-location-dot"></i></span>
+          <span class="main__recherche__form__locationdot"><i class="fa-solid fa-location-dot"></i></span>
           <!--barre de recherche-->
           <input
-            class="form__barreDeRecherche"
+            class="main__recherche__form__barreDeRecherche"
             type="search"
             placeholder="Marseille, France"
             size="1"
           />
           
-          <button type="submit" class="mobile__boutton">
+          <button type="submit" class="main__recherche__mobile__boutton">
             
             <i class="fa-solid fa-magnifying-glass"></i>
           
           </button>
-          <input type="submit" value="Rechercher" class="form__boutton">
+          <input type="submit" value="Rechercher" class="main__recherche__form__boutton">
           
   
             
@@ -87,10 +91,10 @@
         <!--filtres de recherche-->
 
       
-        <div class="category">
+        <div class="main__filters">
       
           
-          <div id="filter__title">Filtres</div>
+          <div id="main__filter__title">Filtres</div>
           
           <div id="filter__list">
             
@@ -378,17 +382,16 @@
 
         <article id="main__hebergement__aside">
           
+          <h2>Les plus populaires</h2>
+          
+          <div id="title__star">
+            
+            
+            <i class="fa-solid fa-star"></i>
+          
+          </div>
           <div class="main__hebergement__aside__title">
             
-            <h2>Les plus populaires</h2>
-            
-            <div id="title__star">
-            
-              <i class="fa-solid fa-star"></i>
-              
-              </div>
-            
-
           </div>
           
           <div class="main__hebergement__aside__card">
