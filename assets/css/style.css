@@ -18,9 +18,9 @@ body {
 }
 
 #page {
-  max-width: 1800px;
+  max-width: 1400px;
   justify-content: center;
-  margin: 50px;
+  margin: auto;
   
 }
 
@@ -33,31 +33,31 @@ body {
 }
 
 #header__logo img {
-  height: 80px;
+  width: 140px;
 }
 
-header {
-  justify-content: flex-start;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
-}
 
 nav {
-  padding-top: 45px;
-  padding-left: 40px;
-  padding-right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+nav li{
+  padding-right: 50px;
 }
 
 .header__nav__links {
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
   text-decoration: none;
-  border-top: 2px solid transparent;
-  color: black;
+    color: black;
+    padding: 25px 10px 0 10px;
 }
 
 .header__nav__links:hover {
@@ -79,6 +79,10 @@ main{
   margin: 5px;
   padding: 30px;
   padding-left: 4px;
+}
+
+#main__recherche form{
+  display: flex;
 }
 
 h1 {
@@ -126,56 +130,48 @@ h1 {
 
 
 
-/*fin section*/
 
-#main__recherche form {
-  display: flex;
-  flex-direction: row;
-  padding-top: 20px;
-}
-
-.main__recherche__form__locationdot {
-  background-color: #f2f2f2;
-  padding: 1rem 1.25rem;
-  border-radius: 1rem 0 0 1rem;
-  text-align: center;
-}
-
-.main__recherche__form__boutton {
-  background-color: #0065fc;
-  color: #f2f2f2;
-  font-weight: bold;
-  border: none;
-  height: 55px;
-  padding: 16px 20px 16px 20px;
-  border-radius: 0px 10px 10px 0px;
-}
-
-.main__recherche__form__boutton {
-  color: #f2f2f2;
-}
-
-.main__recherche__mobile__boutton{
-  display: none;
-}
-
-
-.main__recherche__form__barreDeRecherche {
-  border-right: none;
-  border-left: none;
-  border-top: #f2f2f2 1px solid;
-  border-bottom: #f2f2f2 1px solid;
-  padding: 1rem 1.25rem;
-  box-sizing: border-box;
-  width: 14rem;
-  font-size: 1rem;
-  font-weight: bold;
-}
 
 /*barre de recherche*/
 #main__recherche .fa-location-dot {
   background-color: #f2f2f2;
+  background-color: #F2F2F2;
+  border-radius: 10px 0 0 10px;
+  font-size: 15px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0px 9px 0px 15px;
 }
+
+#main__recherche__form__barre_recherche {
+  display: flex;
+
+}
+#main__recherche__form__barre_recherche input{
+  height: 40px;
+  border: 1px solid #F2F2F2;
+  font-weight: bold;
+  font-family: "Raleway";
+  font-size: 16px;
+  text-align: center;
+}
+.main__recherche__mobile__boutton {
+  height: 40px;
+  color: white;
+  background-color: #0065fc;
+  font-weight: bold;
+  border: 1px solid #0065fc;
+  border-radius: 0px 11px 10px 0;
+  width: 100px;
+  }
+
+  button .fa-magnifying-glass{
+    display: none;
+  }
+
+
+
 /*Filtres de recherche*/
 
 .main__filters{
@@ -291,7 +287,7 @@ h1 {
 
 }
 
-/*fin zone filtres de recherche*/
+/*fin section filtres de recherche*/
 
 
 /*section Partie 1 hebergement Marseille */
@@ -616,52 +612,42 @@ footer a:hover {
     margin: 0px;
     font-family: "Raleway", sans-serif;
   }
-  .page{
-    width: auto;
+  
+  #page{
+    margin: 0;
+    width: 100%;  
   }
-  header {
-    display: flex;
-    flex-direction: column;
+  
+  #header__logo img{
+    width: 170px;
   }
   
   nav {
+    flex-direction: column;
+  }
+  
+  .header__nav__links{
+    font-size: 18px;
+    padding: 29px 10px 0 10px;
+  }
+  nav ul{
     display: flex;
-    flex-direction: row;
-    padding-top: 10px;
-  }
-
-  nav img {
-    display: flex;
-    width: 150px;
-    height: 120px;
-    align-self: center;
-  }
-
-  #logo {
-    align-items: center;
-    padding: 0px;
-  }
-
-  nav ul {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding: 0 0 11px 0;
     list-style: none;
-  }
-
-  li:hover {
-    border-bottom: #0065fc 3px solid;
+    
   }
 
   nav li {
-    display: flex;
     width: 50%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: 3px solid #F2F2F2;
   }
 
+  nav a {
+    text-decoration:none;
+  }
+  
   a .nav__links {
     border-style: solid;
     border-top: none;
@@ -677,6 +663,23 @@ footer a:hover {
   a .nav__links:hover {
     border-bottom: #0065fc 3px solid;
   }
+
+  nav img {
+    display: flex;
+    width: 150px;
+    height: 120px;
+    align-self: center;
+  }
+
+  
+
+
+  li:hover {
+    border-bottom: #0065fc 3px solid;
+  }
+
+
+ 
   /*barre de recherche*/
   
   #main__recherche__intro{

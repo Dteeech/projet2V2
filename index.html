@@ -31,20 +31,24 @@
       <!-- Header en-tête -->
      
       <header>
-     
-        <div id="header__logo">
-     
-          <img id="logo" src="/assets/images/logo/Booki.png" alt="logo_booki" />
-     
-        </div>
+        <nav>
+          <div id="header__logo">
+      
+            <img id="logo" src="/assets/images/logo/Booki.png" alt="logo_booki" />
+      
+          </div>
 
      
-        <nav>
+        
+
+          <ul>
+            
+            <li> <a class="header__nav__links" href="#">Hébergements</a> </li>
      
-          <a class="header__nav__links" href="#">Hébergements</a>
-     
-          <a class="header__nav__links" href="#">Activités</a>
-     
+            <li> <a class="header__nav__links" href="#">Activités</a> </li>
+          
+          </ul>
+        
         </nav>
      
       </header>
@@ -63,33 +67,29 @@
           <p>En plein centre ville ou en pleine nature</p>
         
         </div>
-        <form method="post" action="traitement.php">
+        
      
-          <span class="main__recherche__form__locationdot"><i class="fa-solid fa-location-dot"></i></span>
-          
-          <!--barre de recherche-->
-          
-          <input
-            class="main__recherche__form__barreDeRecherche"
-            type="search"
-            placeholder="Marseille, France"
-            size="1"
-          />
-          
+        <div id="main__recherche__form__barre_recherche">
+                    
+          <div id="block_recherche__barre_de_recherche__iloc"> <i class="fa-solid fa-location-dot"></i></div>
+            <form id="block_recherche__barre_de_recherche__form" method="post" action="#">
+              <input type="text" name="barre_de_recherche" value="Marseille, France">     
+            </form>
+        
           <button type="submit" class="main__recherche__mobile__boutton">
             
+            <span class="rechercher">Rechercher</span>
             <i class="fa-solid fa-magnifying-glass"></i>
-          
+   
           </button>
-          <input type="submit" value="Rechercher" class="main__recherche__form__boutton">
-          
+              </div>   
   
             
           
           <!-- bouton recherche-->
-        </form>
+        
       
-        </section>
+        
         <!--filtres de recherche-->
 
         
@@ -143,9 +143,9 @@
           
         </div>
         
-                <!--Cartes-->
+       </section>         <!--Cartes-->
       <section id="main__hebergements"> 
-        
+      
         <!--Block qui contient hebergements à marseille et populaires-->
         
         <article id="main__hebergements__block">
