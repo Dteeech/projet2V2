@@ -26,7 +26,7 @@
 
   <body>
     
-    <div id="page">
+    <div id="page"> <!-- bloc pour les dimensions de la page -->
      
       <!-- Header en-tête -->
      
@@ -49,9 +49,7 @@
         </nav>
      
       </header>
-      <!--Main-->
-     
-      <main>
+      <main> 
      
         <section id="main__recherche">
           <!--Section recherche-->
@@ -60,58 +58,48 @@
             
             <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
       
-            
-            <p>En plein centre ville ou en pleine nature</p>
+            <p> En plein centre ville ou en pleine nature </p>
           
           </div>
           
       
           <div id="main__recherche__form__barre_recherche">
                       
-            <div id="main__recherche__form"> <i class="fa-solid fa-location-dot"></i></div>
-                <form id="main__recherche__form__barre__recherche" method="post" action="#">
-                  <input type="text" name="barre_de_recherche" value="Marseille, France">     
-                </form>
+            <div id="main__recherche__form"> 
+              <i class="fa-solid fa-location-dot"></i></div> 
+              <form id="main__recherche__form__barre__recherche" method="post" action="#">
+                <input type="text" name="barre_de_recherche" value="Marseille, France">     
+              </form>
             
-              <button type="submit" class="main__recherche__boutton">
+              <button type="submit" class="main__recherche__boutton"> <!-- bouton recherche-->
                 
-                <span class="rechercher">Rechercher</span>
+                <span class="rechercher">Rechercher</span> 
                 
               </button>
               <button class="loupe">
                 
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-magnifying-glass"></i><!-- bouton recherche mobile-->
               
               </button>
           </div>
             
-            
-             
-    
-              
-            
-            <!-- bouton recherche-->
           
-        
           
-          <!--filtres de recherche-->
 
           
-          <div class="main__filters">
+          <div class="main__filters"> <!--section recherche-->
         
-            
-            
-
             <div id="filter__list">
-            <div id="main__filter__title">Filtres</div>
 
+              <div id="main__filter__title">Filtres</div><!--filtres de recherche-->
+              
               <div class="filter__effect">
+                
                 <i class="fa-solid fa-money-bill"></i>
         
                 <p class="filter__effect__description">Economique</p>
         
               </div>
-        
               <div class="filter__effect">
         
                 <i class="fa-solid fa-child-reaching"></i>
@@ -119,7 +107,6 @@
                 <p class="filter__effect__description">Familial</p>
         
               </div>
-        
               <div class="filter__effect">
         
                 <i class="fa-solid fa-heart"></i>
@@ -127,7 +114,6 @@
                 <p class="filter__effect__description">Romantique</p>
         
               </div>
-        
               <div class="filter__effect">
         
                 <i class="fa-solid fa-dog"></i>
@@ -135,10 +121,7 @@
                 <p class="filter__effect__description">Animaux autorisés</p>
         
               </div>
-              
-            
             </div> 
-            
             <div class="infos">
             
               <i class="fa-solid fa-info"></i><p class="infos__text">Plus de 500 logements sont disponibles dans cette ville</p>
@@ -147,14 +130,10 @@
             
           </div>
           
-        </section>         <!--Cartes-->
-        <section id="main__hebergements"> 
-        
-          <!--Block qui contient hebergements à marseille et populaires-->
+        </section>         <!-- sections Cartes -->
+        <div id="main__hebergements"> <!--Block contient hebergements à marseille et populaires-->
           
-          <article id="main__hebergements__block">
-          
-            <!--Block d'hebergements à marseille -->
+          <article id="main__hebergements__block"> <!--Block d'hebergements à marseille -->
             
             <h2>Hébergements à Marseille</h2>
             
@@ -313,7 +292,7 @@
                     <p>Nuit à partir de <strong>23€</strong></p>
                   
                     <div class="stars"> 
-                      
+                   
                       <i class="fa-solid fa-star">
                       
                       <i class="fa-solid fa-star">
@@ -338,9 +317,9 @@
               <div class="main__hebergements__block__cards__card"> 
                 
                 <a href="#">
-                  
-                    
+
                   <img src="assets/images/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hôtel chez Amina">
+                  
                   <div class="main__hebergements__block__cards__card__description">
 
                     <h3>Hôtel chez Amina</h3>
@@ -372,19 +351,15 @@
               
             </div> 
             
-              <p class="plus">
+              <div class="plus">
               
                 <a href="#">Afficher plus</a>
               
-              </p>
-            
-            
+              </div>
             
           </article>
-          
-          <!--Les plus populaires -->
 
-          <article id="main__hebergement__aside">
+          <article id="main__hebergement__aside"><!--Les plus populaires -->
             
           
             
@@ -498,7 +473,7 @@
           
           </article>
       
-        </section>
+        </div>
       <!--activité Marseille-->
         <section id="main__activites">
           
@@ -633,9 +608,10 @@
         
         <div class="footer__column">
         
-         
-          <h4>Nos hébergements</h4>
+         <h4>Nos hébergements</h4>
+          
           <ul>
+            
             
             
             <li><a href="#">Charte qualité</a></li>
@@ -648,8 +624,8 @@
 
         <div class="footer__column">
         
-          
           <h4>Assistance</h4>
+          
           <ul>
             
             
