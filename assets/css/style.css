@@ -27,13 +27,7 @@ body {
 /*Header*/
 
 
-#header__logo{
-  margin-left: 30px;
-}
 
-#header__logo img {
-  width: 140px;
-}
 
 
 nav {
@@ -50,17 +44,18 @@ nav ul{
 }
 
 nav li{
+  font-weight: 300;
   padding-right: 50px;
 }
 
 .header__nav__links {
   text-decoration: none;
-    color: black;
-    padding: 25px 10px 0 10px;
+  padding: 25px 10px 0 10px;
+  color: black;
 }
 
 .header__nav__links:hover {
-  padding-top: 38px;
+  padding-top: 36px;
   border-top: 5px solid #0065fc;
 }
 
@@ -92,7 +87,7 @@ h1 {
 #main__recherche__intro {
   display: flex;
   flex-direction: column;
- }
+}
 
 
 #main__filter__title{
@@ -106,6 +101,7 @@ h1 {
   display: flex;
   margin-top: 10px;
 }
+
 /*infos*/
 
 .infos {
@@ -124,10 +120,6 @@ h1 {
   padding-right: 15px;
   
 }  
-
-
-
-
 
 /*barre de recherche*/
 
@@ -165,6 +157,7 @@ h1 {
 
 
 .main__recherche__boutton {
+  cursor:pointer;
   height: 40px;
   color: white;
   background-color: #0065fc;
@@ -189,7 +182,7 @@ h1 {
   margin-top: 30px;
 }
 
-#filter__title {
+#main__filter__title {
   font-size: 20px;
   align-self: center;
   justify-content: flex-start;
@@ -198,7 +191,7 @@ h1 {
 
 }
 
-#filter__list {
+#main__filter__list {
   display: flex;
   flex-wrap: wrap;
   margin-left: 10px;
@@ -268,21 +261,17 @@ h1 {
 /* fin des icones*/
 /*zone texte icones*/
 
-.filter__effect {
+.main__filter__effect {
   display: flex;
-  width: 300px;
-  margin-left: 20px;
-  
-}
-.filter__effect:hover {
   
 }
 
-.filter__effect i {
+
+.main__filter__effect i {
   margin-bottom: 50px;
 }
 
-.filter__effect__description {
+.main__filter__effect__description {
   
   font-size: 15px;
   font-weight: 500;
@@ -300,7 +289,7 @@ h1 {
 
 }
 
-.filter__effect__description:hover{
+.main__filter__effect__description:hover{
   box-shadow: 10px 5px 5px black;
   background-color: #DEEBFF;
   opacity: 0.8;
@@ -324,8 +313,8 @@ h1 {
   color: black;
 }
 
-h2 {
-  margin-left: 25px;
+#main__hebergements h2 {
+padding-left: 50px;
   
 }
 
@@ -413,7 +402,6 @@ h3 {
 display: flex;
 flex-direction: column;
 align-items: center;
-width: 30%;
 background-color: #F2F2F2;
 border-radius: 20px;
 }
@@ -431,19 +419,19 @@ border-radius: 20px;
 
 }
 
-#title__star
-{
+#title__chart{
   display: flex;
   font-weight: 900;
-
-}
-#title__star h2{
-  margin-left: 0px;
 }
 
-#title__star .fa-star{
-  margin-left: 60px;
-  margin-top: 20px;
+.fa-chart-line{
+  font-size: 25px;
+  color: black;
+  padding-top: 15px;
+  padding-left: 140px;
+  
+  
+
 }
 
 .main__hebergement__aside__card{
@@ -487,6 +475,10 @@ color: #0065fc;
   width: 100%; 
 }
 
+#title__star h2{
+  margin: 15px 5px 5px 70px;
+}
+
 
 #main__activites__block {
   
@@ -507,7 +499,7 @@ color: #0065fc;
 
 .main__activites__block__large_card{
   border-radius: 20px;
-  height: 420px;
+  height: 450px;
   width: 20%;
   transition: 1s;
   box-shadow: 0px 0px 13px #e2e2e2;
@@ -538,6 +530,7 @@ margin-left: 25px;
 
 .main__activites__block__double_card{
   box-shadow: 0px 0px 13px #e2e2e2;
+  height: 200px;
   transition: 1s;
   border-radius: 20px;
   margin-bottom: 50px;
@@ -642,7 +635,6 @@ footer a:hover {
     width: 170px;
   }
   
-
   nav {
     flex-direction: column;
   }
@@ -651,10 +643,12 @@ footer a:hover {
     font-size: 18px;
     padding: 29px 10px 0 10px;
   }
+  
   nav ul{
     display: flex;
     width: 100%;
     list-style: none;
+    padding-left: 0%;
     
   }
 
@@ -706,11 +700,11 @@ footer a:hover {
   
   form{
     display: flex;
-    margin-left: 8px;
     justify-content: center;
     height: 50px;
   }
   
+
   #main__recherche__form__barre_recherche{
     justify-content: center;
   
@@ -736,20 +730,20 @@ footer a:hover {
 
   /*filtres*/
   
-  #filter__list{
+  #main__filter__list{
     display: flex;
     width: auto;
     justify-content: center;
     display: flex;
   }
 
-  #filter__title{
+  #main__filter__title{
   margin-right: 1px;
   width: auto;
   justify-content: left;
   }
   
-  .filter__effect{
+  .main__filter__effect{
     display: flex;
     
   }
@@ -797,14 +791,13 @@ footer a:hover {
   display: flex;
   flex-direction: column;
   width: 100%;
-
   padding: 40px;
  
   }
 
 #main__activites h2{
   margin-bottom: 15px;
-  text-align: center;
+
   }
 
  #main__activites__block{
@@ -819,11 +812,20 @@ footer a:hover {
    height: inherit;
    margin-bottom: 40px;
  }
+ .main__activites__block__large_card h3{
+  
+  margin-left: 250px;
+  font-size:25px;
+ }
 
  .main__activites__block__double{
   width: inherit;
   height: inherit;  
   
+ }
+ .main__activites__block__double_card h3{
+  margin-left: 250px;
+  font-size:25px;
  }
  .main__activites__block__double img {
   align-content: space-between;
@@ -847,6 +849,9 @@ footer a:hover {
     align-content: center;
   
   }
+  footer div{
+    margin-left: 75px;
+  }
   
 }
 
@@ -859,6 +864,7 @@ footer a:hover {
   
   #page{
     margin: 0;
+    justify-content: center;
     width: 100%;
     min-width: 305px;  
   }
@@ -875,11 +881,13 @@ footer a:hover {
     font-size: 18px;
     padding: 29px 10px 0 10px;
   }
+  
   nav ul{
     display: flex;
     width: 100%;
     list-style: none;
     
+  
   }
 
   nav li {
@@ -887,6 +895,8 @@ footer a:hover {
     padding-bottom: 20px;
     text-align: center;
     border-bottom: 3px solid #F2F2F2;
+    border-width: 100% ;  
+  
   }
 
   nav a {
@@ -918,8 +928,9 @@ footer a:hover {
   }
 
   
-  li:hover {
+  nav li:hover {
     border-bottom: #0065fc 3px solid;
+    
   }
 
   /*barre de recherche*/
@@ -930,7 +941,6 @@ footer a:hover {
   
   form{
     display: flex;
-    margin-left: 8px;
     justify-content: center;
     height: 50px;
   }
@@ -959,24 +969,18 @@ footer a:hover {
 
   /*filtres*/
   
-  #filter__list{
+  #main__filter__list{
     display: flex;
-    width: auto;
-    justify-content: center;
-    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
   }
 
-  #filter__title{
+  #main__filter__title{
+    display: flex;
   margin-right: 1px;
-  width: auto;
-  justify-content: left;
+  justify-content: center;
   }
   
-  .filter__effect{
-    display: flex;
-    
-  }
-
   .infos{
     justify-content: center;
   }
@@ -1011,6 +1015,11 @@ footer a:hover {
   width: 100%;
  }
 
+ #main__hebergements h2{
+   margin-left: inherit;
+   margin-left: 15px;
+ }
+
  /*comment faire passer le aside 
  avant hebergemement ? column reverse dans 
  le  maine block hebergement*/
@@ -1021,21 +1030,17 @@ footer a:hover {
   display: flex;
   flex-direction: column;
   width: 100%;
-
-  padding: 40px;
- 
+  padding: 5px;
   }
 
 #main__activites h2{
-  margin-bottom: 15px;
-  text-align: center;
+  font-size:large;
 
   }
 
  #main__activites__block{
    flex-direction: column;
    margin-top: 10px;
-   
    
  }
 
@@ -1062,17 +1067,21 @@ footer a:hover {
    height: 150px;
   }
 
-  /* footer */
+  
 
-  footer {
+  footer{
     flex-direction: column;
-
     padding: inherit;
     justify-content: center;
     align-content: center;
     
     
   }
+  
+  footer div{
+    margin-left: 55px;
+  }
 }
+
   
   
