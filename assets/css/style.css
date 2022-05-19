@@ -79,16 +79,18 @@ h1 {
   flex-direction: column;
 }
 
-#main__filter__title {
-  align-self: center;
-  font-size: large;
-  margin-right: 15px;
-  margin-bottom: 32px;
+.main__filters{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
+
+
 
 .infos__text {
   display: flex;
   margin-top: 10px;
+  font-weight: 500;
 }
 
 /*infos*/
@@ -97,7 +99,6 @@ h1 {
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
-  margin-left: -20px;
 }
 
 .fa-info {
@@ -115,39 +116,43 @@ h1 {
   padding: 0px;
 }
 
-#main__recherche .fa-location-dot {
-  background-color: #f2f2f2;
-  background-color: #f2f2f2;
-  border-radius: 10px 0 0 10px;
-  font-size: 15px;
-  height: 40px;
-  display: flex;
+
+#main__recherche__form__location{
+  background-color:#f2f2f2;
+  border-radius: 16px 0px 00px 16px;
   align-items: center;
-  padding: 0px 9px 0px 15px;
+
+}
+#main__recherche__form__location .fa-location-dot{
+  align-self: center;
+  padding: 16px 20px;
+  border-radius: 16px 0 0 16px;
 }
 
-#main__recherche__form__barre_recherche {
+#main__recherche__form__barre_de_recherche {
+  margin: 16px 0;
   display: flex;
 }
 
-#main__recherche__form__barre_recherche input {
-  height: 40px;
-  border: 1px solid #f2f2f2;
-  font-weight: bold;
-  font-family: "Raleway";
-  font-size: 16px;
-  text-align: center;
+#main__recherche__form__barre_de_recherche input {
+  border-right: none;
+  border-left: none;
+  border-top: #F2F2F2 1px solid;
+  border-bottom: #F2F2F2 1px solid;
+  padding: 16px 20px;
+  width: 224px;
+  height: 90%;
 }
 
 .main__recherche__boutton {
-  cursor: pointer;
-  height: 40px;
-  color: white;
-  background-color: #0065fc;
+  background-color: #0065FC;
   font-weight: bold;
-  border: 1px solid #0065fc;
-  border-radius: 0px 11px 10px 0;
-  width: 100px;
+  border: none;
+  border-radius: 0 16px 16px 0;
+  padding: 16px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
 }
 
 .loupe {
@@ -172,10 +177,10 @@ h1 {
 
 #main__filter__list {
   display: flex;
+  padding-right: 100px;
   flex-wrap: wrap;
-  margin-left: 10px;
-  margin-top: 0px;
-  justify-content: flex-start;
+  margin: 16px 0;
+  font-weight: 700;
 }
 
 /* logos*/
@@ -185,12 +190,7 @@ h1 {
   border-radius: 50px 50px 50px 50px;
   color: #0065fc;
   font-size: 20px;
-  padding: 16px;
-  padding-left: 14px;
-  padding-right: 15.5px;
-  margin-top: 21px;
-  margin-bottom: 21px;
-  margin-right: -50px;
+  align-self: center;
 }
 
 .fa-child-reaching {
@@ -198,24 +198,15 @@ h1 {
   border-radius: 50px 50px 50px 50px;
   color: #0065fc;
   font-size: 20px;
-  padding: 15px;
-  padding-left: 17px;
-  padding-right: 19px;
-  margin-top: 21px;
-  margin-bottom: 21px;
-  margin-right: -50px;
+  align-self: center;
+  
 }
 
 .fa-heart {
   background-color: #deebff;
   font-size: 20px;
   border-radius: 50px 50px 50px 50px;
-  padding: 15px;
-  padding-left: 15px;
-  padding-right: 16px;
-  margin-top: 21px;
-  margin-bottom: 21px;
-  margin-right: -50px;
+  align-self: center;
   color: #0065fc;
 }
 
@@ -223,45 +214,41 @@ h1 {
   background-color: #deebff;
   color: #0065fc;
   font-size: 20px;
+  height: fit-content;
   border-radius: 50px 50px 50px 50px;
-  padding: 15px;
-  padding-left: 14px;
-  padding-right: 15px;
-  margin-right: 12px;
-  margin-top: 21px;
-  margin-bottom: 21px;
-  margin-right: -50px;
+  align-self: center;
 }
 
 /* fin des icones*/
 
 .main__filter__effect {
+  border: 3px solid #F2F2F2;
+  font-size: large;
+  margin: 0px 24px 8px 0px;
   display: flex;
+  align-items: center;
+  border-radius: 30px;
 }
 
 .main__filter__effect i {
-  margin-bottom: 50px;
+  background-color: #DEEBFF;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  margin: -3px;
 }
 
 /*zone texte icones*/
 
 .main__filter__effect__description {
-  font-size: 15px;
-  font-weight: 500;
-  border: 3px solid #f2f2f2;
-  border-left: none;
-  border-radius: 50px 50px 50px 50px;
-  height: 56px;
-  width: 200px;
-  margin-right: 20px;
-  padding-top: 12px;
-  padding-left: 65px;
-  position: relative;
-  align-self: center;
-  box-shadow: 10px 5px 5px #deebff;
+ font-weight: bold;
+  margin: 0 16px;
 }
 
-.main__filter__effect__description:hover {
+.main__filter__effect:hover {
   box-shadow: 10px 5px 5px black;
   background-color: #deebff;
   opacity: 0.8;
@@ -285,7 +272,7 @@ h3 {
 }
 
 #main__hebergements h2 {
-  padding-left: 50px;
+  padding-left: 15px;
 }
 
 #main__hebergements__block {
@@ -375,16 +362,15 @@ h3 {
   text-decoration: none;
 }
 
-.main__hebergement__aside__title {
-  display: flex;
-  align-items: center;
-  width: 87%;
-  justify-content: space-between;
-}
 
 #title__chart {
   display: flex;
+  width: 100%;
   font-weight: 900;
+}
+
+#title__chart h2 {
+padding-left: 28px;
 }
 
 .fa-chart-line {
@@ -648,23 +634,43 @@ footer a:hover {
     text-align: center;
   }
 
-  form {
-    display: flex;
-    justify-content: center;
-    height: 50px;
+  
+
+  #main__recherche .fa-location-dot {
+    align-self: center;
+    padding: 16px 20px;
+    border-radius: 16px 0 0 16px;
   }
 
-  #main__recherche__form__barre_recherche {
-    justify-content: center;
-  }
+  #main__recherche__form__location{
+    background-color:#f2f2f2;
+    border-radius: 16px 0px 00px 16px;
+    align-items: center;
+    font-size: large;
 
+  }
+  #main__recherche__form__barre_de_recherche {
+    justify-content: center;
+    height: auto;
+    width: auto;
+  }
+  #main__recherche__form__barre_de_recherche input {
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding: 16px 20px;
+    width: 224px;
+    height: 90%;
+  }
   .main__recherche__boutton {
     display: none;
   }
 
   .loupe {
-    width: 45px;
-    height: 40px;
+    justify-content: center;
+    font-size: large;
+    width: 55px;
     display: block;
     flex-direction: row;
     flex-wrap: wrap;
@@ -672,15 +678,13 @@ footer a:hover {
     color: #deebff;
     border: none;
     border-radius: 15px;
-    position: relative;
-    right: 10px;
   }
 
   /*filtres*/
 
   #main__filter__list {
     display: flex;
-    width: auto;
+    height: 100%px;
     justify-content: center;
     display: flex;
   }
@@ -710,6 +714,9 @@ footer a:hover {
     width: 100%;
     margin-top: 35px;
   }
+  #main__hebergements__block h2 {
+  padding-left: 45px;
+  }
 
   #main__hebergements__block__cards {
     height: 50%;
@@ -729,9 +736,11 @@ footer a:hover {
     display: flex;
     width: 100%;
   }
+
   #title__chart h2 {
     display: flex;
     flex: 1;
+    padding-left: 52px;
     justify-content: flex-start;
   }
   #title__chart i {
@@ -840,7 +849,6 @@ footer a:hover {
     padding-right: 0;
     text-align: center;
     border-bottom: 3px solid #f2f2f2;
-    border-width: 100%;
   }
 
   nav a {
@@ -878,26 +886,47 @@ footer a:hover {
   /*barre de recherche*/
 
   #main__recherche__intro {
-    text-align: center;
+    font-weight: 900;
+    width: 309px;
   }
 
-  form {
-    display: flex;
+  #main__recherche__form__location{
+    background-color: #F2F2F2;
+    border-radius: 16px 0 0 16px;
+  }
+
+  #main__recherche__form__barre_de_recherche {
     justify-content: center;
+    height: auto;
+    width: auto;
+  }
+ 
+  #main__recherche .fa-location-dot {
+    width: 60px;
     height: 50px;
-  }
-
-  #main__recherche__form__barre_recherche {
     justify-content: center;
   }
-
+  
   .main__recherche__boutton {
     display: none;
   }
+  
+  #main__recherche__form__barre__recherche{
+    height: 50px;
+    width:auto;
+    width: 90%;
+  }
+
+  #main__recherche__form__barre__recherche input{
+    height: 50px;
+    width: 170px;
+    
+  }
 
   .loupe {
-    width: 45px;
-    height: 40px;
+    justify-content: center;
+    font-size: large;
+    width: 55px;
     display: block;
     flex-direction: row;
     flex-wrap: wrap;
@@ -905,7 +934,6 @@ footer a:hover {
     color: #deebff;
     border: none;
     border-radius: 15px;
-    position: relative;
     right: 10px;
   }
 
@@ -914,7 +942,7 @@ footer a:hover {
   #main__filter__list {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    padding: 0%;    
   }
 
   #main__filter__title {
@@ -967,9 +995,11 @@ footer a:hover {
   }
   #main__hebergements h2 {
     margin-left: inherit;
-    margin-left: 15px;
+    
   }
-
+  #main__hebergements__block h2{
+    padding-left: 26px;
+  }
   /* Partie activités */
 
   #main__activites {
